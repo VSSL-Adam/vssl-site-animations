@@ -1,0 +1,32 @@
+// Libre Franklin
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap");
+// Gin
+@import url("https://use.typekit.net/olg6crf.css");
+
+html,
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 100%;
+}
+a {
+  transition: all 250ms;
+  text-decoration: none;
+  color: $white;
+  &:hover {
+    color: $gold;
+  }
+}
+h1 {
+  font-family: "gin", serif;
+  font-size: 4rem;
+  font-weight: 400;
+  color: $gold;
+}
+h2 {
+  font-family: "gin", serif;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.25;
+  color: $white;
+  margin: 0 0 1rem 0;
+}

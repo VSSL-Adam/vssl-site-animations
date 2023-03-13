@@ -1,0 +1,12 @@
+a.nav-link {
+  font-family: "rift", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.125;
+  color: $light_gray;
+  transition: all 200ms;
+  &:hover {
+    color: $white;
+    transform: rotate(-4deg);
+  }
+}

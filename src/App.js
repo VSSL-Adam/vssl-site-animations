@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import Title from "./components/Title";
+// import Crew from "./components/Crew";
+import Button from "./components/Button";
+import NavLink from "./components/NavLink";
+import Mouse from "./components/Mouse";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <Mouse />
 
+      <div className="container">
+        <Title text="Work from the crew" />
+      </div>
+      <div className="container">
+        <Button
+          button_class="primary"
+          title="Discovery More"
+          type="link"
+          src="https://vsslagency.com"
+          target="_blank"
+        />
+        <Button
+          button_class="secondary"
+          title="Discovery More"
+          type="link"
+          src="https://vsslagency.com"
+          target="_blank"
+        />
+      </div>
+      <div className="container">
+        <NavLink src="/" title="Subnav Link" />
+      </div>
+
+      {/* <Crew /> */}
+    </>
+  );
+};
 export default App;

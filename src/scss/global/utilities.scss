@@ -1,0 +1,26 @@
+.container {
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.hoverable:hover ~ .cursor {
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:before {
+    content: "Look";
+    font-family: "rift", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: $black;
+  }
+}

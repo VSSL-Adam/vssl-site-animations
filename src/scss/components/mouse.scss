@@ -1,0 +1,29 @@
+* {
+  cursor: none !important;
+}
+.cursor {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: $gold;
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+  transition: width 300ms, height 300ms;
+}
+.hoverable:hover ~ .cursor {
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:before {
+    content: "Look";
+    font-family: "rift", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: $black;
+  }
+}
