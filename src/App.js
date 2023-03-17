@@ -1,16 +1,19 @@
 import Title from "./components/Title";
-// import Crew from "./components/Crew";
+import Crew from "./components/Crew";
 import Button from "./components/Button";
 import NavLink from "./components/NavLink";
-import Mouse from "./components/Mouse";
+import Salt from "./components/Salt";
+// import Mouse from "./components/Mouse";
 
 const App = () => {
   return (
     <>
-      <Mouse />
-
+      {/* <Mouse /> */}
       <div className="container">
         <Title text="Work from the crew" />
+      </div>
+      <div className="container">
+        <Salt title="Lock in the strategy and crack off" />
       </div>
       <div className="container">
         <Button
@@ -31,8 +34,7 @@ const App = () => {
       <div className="container">
         <NavLink src="/" title="Subnav Link" />
       </div>
-
-      {/* <Crew /> */}
+      <Crew />
     </>
   );
 };

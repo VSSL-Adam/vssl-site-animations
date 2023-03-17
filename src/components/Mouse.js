@@ -18,9 +18,8 @@ export default function App() {
 
   return (
     <>
-      <button className="hoverable">Linke 1</button>
-      <button className="hoverable">Click me!</button>
-
+      {/* Adding the "hoverable" class to any element causes the mouse cursor to change */}
+      {/* <button className="hoverable">Sample Button</button>       */}
       <div
         className="cursor"
         style={{ left: cursorPos.x, top: cursorPos.y }}
