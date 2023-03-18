@@ -3,12 +3,14 @@ import Crew from "./components/Crew";
 import Button from "./components/Button";
 import NavLink from "./components/NavLink";
 import Salt from "./components/Salt";
+import HeaderNav from "./components/HeaderNav";
 // import Mouse from "./components/Mouse";
 
 const App = () => {
   return (
     <>
       {/* <Mouse /> */}
+      <HeaderNav />
       <div className="container">
         <Title text="Work from the crew" />
       </div>
