@@ -33,11 +33,7 @@ const H1 = ({ text, delay = 0, duration = 0.05, replay, ...props }) => {
 
   return (
     <motion.h1
-      style={{
-        display: "flex",
-        overflow: "hidden",
-        justifyContent: "center",
-      }}
+      className="text-gold font-gin flex justify-center overflow-hidden text-6xl"
       variants={container}
       initial="hidden"
       animate={"visible"}

@@ -11,13 +11,13 @@ const App = () => {
     <>
       {/* <Mouse /> */}
       <HeaderNav />
-      <div className="container">
+      <div className="flex items-center justify-center p-12">
         <Title text="Work from the crew" />
       </div>
-      <div className="container">
+      <div className="flex items-center justify-center p-12">
         <Salt title="Lock in the strategy and crack off" />
       </div>
-      <div className="container">
+      <div className="flex items-center justify-center p-12">
         <Button
           button_class="primary"
           title="Discovery More"
@@ -33,7 +33,7 @@ const App = () => {
           target="_blank"
         />
       </div>
-      <div className="container">
+      <div className="flex items-center justify-center p-12">
         <NavLink src="/" title="Subnav Link" />
       </div>
       <Crew />

@@ -1,45 +1,35 @@
-section.crew {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  .copy-row {
-    width: 40%;
-    text-align: center;
-    margin: 3rem 0;
-  }
-  .image-row {
-    overflow: hidden;
-    display: grid;
-    grid-template-areas:
-      "coin beach beach ."
-      ". beach beach crew"
-      ". . . crew"
-      "ocean mates mates mates";
-  }
-  .coin {
-    grid-area: coin;
-    transform: translate(10%, 0);
-    z-index: 3;
-  }
-  .beach {
-    grid-area: beach;
-    transform: translate(-20%, 35%);
-    z-index: 2;
-  }
-  .crew-members {
-    grid-area: crew;
-    transform: translate(-75%, -5%);
-    z-index: 2;
-  }
-  .mates {
-    grid-area: mates;
-    z-index: 1;
-    width: 80%;
-    transform: translate(25%, -45%);
-  }
-  .ocean {
-    grid-area: ocean;
-    z-index: 3;
-    transform: translate(115%, -85%);
-  }
+.image-row {
+  overflow: hidden;
+  display: grid;
+  grid-template-areas:
+    "coin beach beach ."
+    ". beach beach crew"
+    ". . . crew"
+    "ocean mates mates mates";
+}
+.coin {
+  grid-area: coin;
+  transform: translate(10%, 0);
+  z-index: 3;
+}
+.beach {
+  grid-area: beach;
+  transform: translate(-20%, 35%);
+  z-index: 2;
+}
+.crew-members {
+  grid-area: crew;
+  transform: translate(-75%, -5%);
+  z-index: 2;
+}
+.mates {
+  grid-area: mates;
+  z-index: 1;
+  width: 80%;
+  transform: translate(25%, -45%);
+}
+.ocean {
+  grid-area: ocean;
+  z-index: 3;
+  transform: translate(115%, -85%);
 }

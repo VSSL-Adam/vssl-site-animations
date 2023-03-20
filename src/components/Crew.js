@@ -6,10 +6,12 @@ import Ocean from "../img/components/ocean.jpg";
 
 const Crew = () => {
   return (
-    <section className="crew">
-      <div className="copy-row">
-        <h2>Who the hell is VSSL?</h2>
-        <p>
+    <section className="flex flex-col items-center">
+      <div className="w-3/6 text-center my-12">
+        <h2 className="font-gin text-5xl leading-tight text-white mb-3">
+          Who the hell is VSSL?
+        </h2>
+        <p className="font-libre_franklin">
           We're a crew of brand builders and marketing pros that know how to
           build brands that stand out. We have our sea legs and we know what it
           takes to propel your brand to success. Ready to meet the crew? Happy

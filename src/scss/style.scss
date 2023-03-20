@@ -1,5 +1,5 @@
-// Variables
-@import "./global/variables.scss";
+// Tailwind CSS
+@import "./global/tailwind.scss";
 
 // CSS Reset
 @import "./global/reset.scss";
@@ -10,8 +10,4 @@
 
 // Components
 @import "./components/crew.scss";
-@import "./components/button.scss";
-@import "./components/navlink.scss";
-@import "./components/salt.scss";
-@import "./components/header.scss";
 // @import "./components/mouse.scss";
