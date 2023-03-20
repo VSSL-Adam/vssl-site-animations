@@ -7,7 +7,7 @@ import Ocean from "../img/components/ocean.jpg";
 const Crew = () => {
   return (
     <section className="flex flex-col items-center">
-      <div className="w-3/6 text-center my-12">
+      <div className="w-3/6 text-center mt-16">
         <h2 className="font-gin text-5xl leading-tight text-white mb-3">
           Who the hell is VSSL?
         </h2>
@@ -18,18 +18,30 @@ const Crew = () => {
           hour is at five.
         </p>
       </div>
-      <div className="image-row">
-        <img src={Coin} alt="VSSL challenge coin" className="img-fluid coin" />
-        <img src={Beach} alt="Salty beach" className="img-fluid beach" />
-        <div className="crew-members">
-          <img src={Adam} alt="Crew member" className="img-fluid" />
+      <div className="image-row grid">
+        <img
+          src={Coin}
+          alt="VSSL challenge coin"
+          className="max-w-full h-auto z-10"
+        />
+        <img
+          src={Beach}
+          alt="Salty beach"
+          className="max-w-full h-auto beach z-10"
+        />
+        <div className="crew-members z-10 sticky top-0">
+          <img src={Adam} alt="Crew member" className="max-w-full h-auto" />
         </div>
         <img
           src={Mates}
           alt="Illustration of crew members"
-          className="img-fluid mates"
+          className="max-w-full h-auto mates"
         />
-        <img src={Ocean} alt="Sink or swim" className="img-fluid ocean" />
+        <img
+          src={Ocean}
+          alt="Sink or swim"
+          className="max-w-full h-auto ocean z-20"
+        />
       </div>
     </section>
   );

@@ -1,9 +1,16 @@
 import Title from "./components/Title";
-import Crew from "./components/Crew";
 import Button from "./components/Button";
 import NavLink from "./components/NavLink";
 import Salt from "./components/Salt";
 import HeaderNav from "./components/HeaderNav";
+import CaseStudyCard from "./components/CaseStudyHero";
+import ResourceCard from "./components/ResourceCard";
+import SEO from "./img/components/seo.jpg";
+import Wave from "./img/components/wave.jpg";
+import SolutionsCard from "./components/SolutionsCard";
+import ServiceCard from "./components/ServiceCard";
+
+// import Crew from "./components/Crew";
 // import Mouse from "./components/Mouse";
 
 const App = () => {
@@ -22,21 +29,98 @@ const App = () => {
           button_class="primary"
           title="Discovery More"
           type="link"
-          src="https://vsslagency.com"
+          src="#"
           target="_blank"
         />
         <Button
           button_class="secondary"
           title="Discovery More"
           type="link"
-          src="https://vsslagency.com"
+          src="#"
           target="_blank"
         />
       </div>
       <div className="flex items-center justify-center p-12">
         <NavLink src="/" title="Subnav Link" />
       </div>
-      <Crew />
+      <CaseStudyCard
+        client="ASTERRA"
+        title="A client's heroic idea and the brand we built to serve it"
+        tags={[
+          "Brand Strategy & Positioning",
+          "Naming",
+          "Identity Design",
+          "Video",
+          "Paid Media",
+        ]}
+      />
+      <div className="flex justify-between px-16 lg:px-32 gap-5 lg:gap-16">
+        <ResourceCard
+          category="Blog"
+          img={SEO}
+          tags={["SEO", "Strategy"]}
+          alt={"Balancing rocks"}
+          title="Content and SEO: It's All About Balance"
+          src="#"
+        />
+        <ResourceCard
+          category="Press"
+          img={Wave}
+          tags={["Social Media", "Creative"]}
+          alt="Black ink drawing of a wave"
+          title="VSSL Agency Partners with Surfrider Foundation"
+          src="#"
+        />
+      </div>
+      <div className="flex justify-between px-16 lg:px-32 gap-5 lg:gap-16">
+        <SolutionsCard
+          type="black"
+          title="Creative"
+          description="Your brand is a story, and our creative team leverages a solid strategy to tell it. We know how to create a cohesive brand experience in order to help your marketing stand out."
+          bullets={[
+            "Branding",
+            "UI/UX",
+            "Graphic Design",
+            "Copywriting",
+            "Campaigns",
+          ]}
+          src="#"
+          link="Get Creative"
+        />
+        <SolutionsCard
+          title="Strategy"
+          type="gray"
+          description="We work with you to develop a plan to reach the right prospects and turn them into customers. With clear measurable KPIs, we'll chart a course for success together."
+          bullets={[
+            "Marketing Strategy",
+            "Demand / Lead Generation Plans",
+            "Segmentation & Persona Development",
+            "Customer Journey Mapping",
+            "Competitor Research & Analysis",
+          ]}
+          src="#"
+          link="Chart a course"
+        />
+      </div>
+      <div className="flex flex-col justify-between px-16 lg:px-32 gap-5">
+        <ServiceCard
+          type="gray"
+          title="Branding"
+          description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est."
+          bullets={["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"]}
+          src="#"
+          link="Lorem ipsum case study"
+        />
+        <ServiceCard
+          type=""
+          title="Copywriting"
+          description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est."
+          bullets={["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"]}
+          src="#"
+          link="Lorem ipsum case study"
+        />
+      </div>
+      {/* <Crew /> */}
     </>
   );
 };
