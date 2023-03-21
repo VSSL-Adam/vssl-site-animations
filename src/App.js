@@ -5,10 +5,13 @@ import Salt from "./components/Salt";
 import HeaderNav from "./components/HeaderNav";
 import CaseStudyCard from "./components/CaseStudyHero";
 import ResourceCard from "./components/ResourceCard";
+import FeaturedResourceCard from "./components/FeaturedResourceCard";
 import SEO from "./img/components/seo.jpg";
 import Wave from "./img/components/wave.jpg";
+import Brand from "./img/components/brand.png";
 import SolutionsCard from "./components/SolutionsCard";
 import ServiceCard from "./components/ServiceCard";
+import BlogHero from "./components/BlogHero";
 
 // import Crew from "./components/Crew";
 // import Mouse from "./components/Mouse";
@@ -54,6 +57,18 @@ const App = () => {
           "Paid Media",
         ]}
       />
+      <div className="flex justify-center px-16 lg:px-32">
+        <FeaturedResourceCard
+          category="Blog"
+          img={Brand}
+          alt={"Human eye"}
+          tags={["Creative", "Strategy"]}
+          date="August 23, 2022"
+          author="Michael Gauthier"
+          title="A Brand Is A Lot More Than You Think"
+          src="#"
+        />
+      </div>
       <div className="flex justify-between px-16 lg:px-32 gap-5 lg:gap-16">
         <ResourceCard
           category="Blog"
@@ -118,6 +133,16 @@ const App = () => {
           bullets={["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"]}
           src="#"
           link="Lorem ipsum case study"
+        />
+      </div>
+      <div className="flex justify-center px-16 py-20 lg:px-32">
+        <BlogHero
+          img={Brand}
+          alt={"Human eye"}
+          tags={["Creative", "Strategy"]}
+          date="August 23, 2022"
+          author="Michael Gauthier"
+          title="A Brand Is A Lot More Than You Think"
         />
       </div>
       {/* <Crew /> */}
