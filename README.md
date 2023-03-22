@@ -8,25 +8,17 @@ Hosted on Surge here: <a href="https://vssl-components.surge.sh/" target="_blank
 
 I started explorations on the mouse cursor styling here in <span style="color:#9a784e;font-weight:bold">Mouse.js</span> and <span style="color:#9a784e;font-weight:bold">mouse.scss</span>. If using this approach there is some additional logic that would need to be done to trigger the enlarging of the mouse cursor when hovering over interactive elements (adding the ".hoverable" class to any element causes the mouse cursor to change; however it needs further development to work).
 
----
-
 ## Framer Motion
 
 For the <span style="color:#9a784e;font-weight:bold">Title.js</span> component animation I'm using <a href="https://www.framer.com/motion/" target="_blank">Framer Motion</a>. This library is the one I'd recommend using for additional sitewide animations as it is not as overtly engineered as Spring.js or Three.js etc. but still has alot of powerful features in it.
-
----
 
 ## Salt Text
 
 This was my initial thought on how to animate this similarly to the example on the <a href="https://www.uno.app/" target="_blnak">Uno</a> site. Note; that this also will require some sort of animate on scroll to trigger the initial animation playing. I would recommend <a href="https://www.react-reveal.com/" target="_blank">React Reveal</a> not only for this but sitewide too if we want to have scroll to reveal stuff.
 
----
-
 ## Primary Buttons
 
 These were tricky as I couldn't quite figure out the best way to handle the negative space around the text (when animating on hover any way I attempted to do it the animation would look wonky).
-
----
 
 ## Crew Images
 
