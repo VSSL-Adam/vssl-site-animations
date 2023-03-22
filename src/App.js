@@ -3,7 +3,7 @@ import Button from "./components/Button";
 import NavLink from "./components/NavLink";
 import Salt from "./components/Salt";
 import HeaderNav from "./components/HeaderNav";
-import CaseStudyCard from "./components/CaseStudyHero";
+import CaseStudyCard from "./components/CaseStudyCard";
 import ResourceCard from "./components/ResourceCard";
 import FeaturedResourceCard from "./components/FeaturedResourceCard";
 import SolutionsCard from "./components/SolutionsCard";
@@ -12,19 +12,16 @@ import BlogHero from "./components/BlogHero";
 import WorkCard from "./components/WorkCard";
 import FeaturedWorkCard from "./components/FeaturedWorkCard";
 
+// Images
 import SEO from "./img/components/seo.jpg";
 import Wave from "./img/components/wave.jpg";
 import Brand from "./img/components/brand.png";
 import MAPP from "./img/components/mapp.jpg";
 import Asterra from "./img/components/asterra.jpg";
 
-// import Crew from "./components/Crew";
-// import Mouse from "./components/Mouse";
-
 const App = () => {
   return (
     <>
-      {/* <Mouse /> */}
       <HeaderNav />
       <div className="flex items-center justify-center p-12">
         <Title text="Work from the crew" />
@@ -175,7 +172,6 @@ const App = () => {
           title="A Brand Is A Lot More Than You Think"
         />
       </div>
-      {/* <Crew /> */}
     </>
   );
 };
