@@ -6,12 +6,17 @@ import HeaderNav from "./components/HeaderNav";
 import CaseStudyCard from "./components/CaseStudyHero";
 import ResourceCard from "./components/ResourceCard";
 import FeaturedResourceCard from "./components/FeaturedResourceCard";
-import SEO from "./img/components/seo.jpg";
-import Wave from "./img/components/wave.jpg";
-import Brand from "./img/components/brand.png";
 import SolutionsCard from "./components/SolutionsCard";
 import ServiceCard from "./components/ServiceCard";
 import BlogHero from "./components/BlogHero";
+import WorkCard from "./components/WorkCard";
+import FeaturedWorkCard from "./components/FeaturedWorkCard";
+
+import SEO from "./img/components/seo.jpg";
+import Wave from "./img/components/wave.jpg";
+import Brand from "./img/components/brand.png";
+import MAPP from "./img/components/mapp.jpg";
+import Asterra from "./img/components/asterra.jpg";
 
 // import Crew from "./components/Crew";
 // import Mouse from "./components/Mouse";
@@ -27,7 +32,7 @@ const App = () => {
       <div className="flex items-center justify-center p-12">
         <Salt title="Lock in the strategy and crack off" />
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center p-12">
+      <div className="flex flex-col lg:flex-row items-center justify-center p-12 gap-5">
         <Button
           button_class="primary"
           title="Discovery More"
@@ -42,21 +47,46 @@ const App = () => {
           src="#"
           target="_blank"
         />
-      </div>
-      <div className="flex items-center justify-center p-12">
         <NavLink src="/" title="Subnav Link" />
       </div>
-      <CaseStudyCard
-        client="ASTERRA"
-        title="A client's heroic idea and the brand we built to serve it"
-        tags={[
-          "Brand Strategy & Positioning",
-          "Naming",
-          "Identity Design",
-          "Video",
-          "Paid Media",
-        ]}
-      />
+      <div className="flex justify-center p-8 lg:px-32">
+        <CaseStudyCard
+          client="ASTERRA"
+          title="A client's heroic idea and the brand we built to serve it"
+          tags={[
+            "Brand Strategy & Positioning",
+            "Naming",
+            "Identity Design",
+            "Video",
+            "Paid Media",
+          ]}
+        />
+      </div>
+      <div className="flex justify-center p-8 lg:px-32">
+        <FeaturedWorkCard
+          img={MAPP}
+          alt="MAPP Website redesign"
+          title="MAPP Cloud"
+          description="The right way to upgrade a website"
+          src="#"
+        />
+      </div>
+      <div className="flex flex-col lg:flex-row justify-between p-8 lg:px-32 gap-5 lg:gap-16">
+        <WorkCard
+          img={MAPP}
+          alt="MAPP Website redesign"
+          title="MAPP Cloud"
+          description="The right way to upgrade a website"
+          src="#"
+        />
+        <WorkCard
+          img={Asterra}
+          alt="ASTERRA rebrand"
+          title="ASTERRA"
+          description="A client's heroic idea and the brand we built to serve it"
+          src="#"
+        />
+      </div>
       <div className="flex justify-center p-8 lg:px-32">
         <FeaturedResourceCard
           category="Blog"

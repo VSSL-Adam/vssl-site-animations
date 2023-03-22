@@ -11,31 +11,31 @@ export default function Social({ social }) {
         const platform_edited = platform.toLowerCase();
         if (platform_edited === "linkedin") {
           return (
-            <a href="/" target="_blank">
+            <a href="/" key={"linkedin"} target="_blank">
               <img src={LinkedIn} alt="LinkedIn" target="_blank" />
             </a>
           );
         } else if (platform_edited === "twitter") {
           return (
-            <a href="/" target="_blank">
+            <a href="/" key={"twitter"} target="_blank">
               <img src={Twitter} alt="Twitter" target="_blank" />
             </a>
           );
         } else if (platform_edited === "facebook") {
           return (
-            <a href="/" target="_blank">
+            <a href="/" key={"facebook"} target="_blank">
               <img src={Facebook} alt="Facebook" target="_blank" />
             </a>
           );
         } else if (platform_edited === "youtube") {
           return (
-            <a href="/" target="_blank">
+            <a href="/" key={"youtube"} target="_blank">
               <img src={YouTube} alt="YouTube" target="_blank" />
             </a>
           );
         } else if (platform_edited === "instagram") {
           return (
-            <a href="/" target="_blank">
+            <a href="/" key={"instagram"} target="_blank">
               <img src={Instagram} alt="Instagram" target="_blank" />
             </a>
           );

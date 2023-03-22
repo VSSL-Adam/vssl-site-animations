@@ -26,8 +26,9 @@ export default function FeaturedResourceCard({
             <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-light_gray border-r border-b border-light_gray group-hover:text-white group-hover:border-black">
               {author}
             </p>
-            <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-gold flex justify-start gap-5 border-b border-light_gray transition-all group-hover:text-white lg:col-span-2">
+            <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-gold flex justify-start gap-5 border-b border-light_gray transition-all group-hover:text-white group-hover:border-black lg:col-span-2">
               {tags.map((tag) => {
+                // 🚨 Add in your unique key prop below 🚨
                 return <span>{tag}</span>;
               })}
             </p>

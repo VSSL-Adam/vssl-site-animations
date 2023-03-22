@@ -12,6 +12,7 @@ export default function ResourceCard({ category, img, alt, tags, title, src }) {
         <div className="lg:w-6/12">
           <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-gold border-b border-light_gray flex justify-start gap-5 transition-all group-hover:text-white group-hover:border-black">
             {tags.map((tag) => {
+              // 🚨 Add in your unique key prop below 🚨
               return <span>{tag}</span>;
             })}
           </p>

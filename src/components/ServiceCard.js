@@ -22,6 +22,7 @@ export default function ServiceCard({
           <p className="p-4 font-libre_franklin">{description}</p>
           <ul className="p-4 font-libre_franklin leading-loose border-none">
             {bullets.map((bullet) => {
+              // 🚨 Add in your unique key prop below 🚨
               return <li>{bullet}</li>;
             })}
           </ul>

@@ -17,13 +17,9 @@ export default function App() {
   }, []);
 
   return (
-    <>
-      {/* Adding the "hoverable" class to any element causes the mouse cursor to change */}
-      {/* <button className="hoverable">Sample Button</button>       */}
-      <div
-        className="cursor"
-        style={{ left: cursorPos.x, top: cursorPos.y }}
-      ></div>
-    </>
+    <div
+      className="cursor"
+      style={{ left: cursorPos.x, top: cursorPos.y }}
+    ></div>
   );
 }

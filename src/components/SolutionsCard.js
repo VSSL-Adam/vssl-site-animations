@@ -21,6 +21,7 @@ export default function SolutionsCard({
         <p className="px-4 pt-4 font-libre_franklin">{description}</p>
         <ul className="p-4 font-libre_franklin border-b border-light_gray leading-loose">
           {bullets.map((bullet) => {
+            // 🚨 Add in your unique key prop below 🚨
             return <li>{bullet}</li>;
           })}
         </ul>

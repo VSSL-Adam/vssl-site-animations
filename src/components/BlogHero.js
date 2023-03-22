@@ -24,6 +24,7 @@ export default function BlogHero({ img, alt, date, author, tags, title }) {
             </p>
             <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-gold flex border-b border-light_gray justify-start gap-5 lg:col-span-2">
               {tags.map((tag) => {
+                // 🚨 Add in your unique key prop below 🚨
                 return <span>{tag}</span>;
               })}
             </p>
