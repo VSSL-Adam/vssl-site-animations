@@ -27,7 +27,7 @@ const App = () => {
       <div className="flex items-center justify-center p-12">
         <Salt title="Lock in the strategy and crack off" />
       </div>
-      <div className="flex items-center justify-center p-12">
+      <div className="flex flex-col lg:flex-row items-center justify-center p-12">
         <Button
           button_class="primary"
           title="Discovery More"
@@ -57,7 +57,7 @@ const App = () => {
           "Paid Media",
         ]}
       />
-      <div className="flex justify-center px-16 lg:px-32">
+      <div className="flex justify-center p-8 lg:px-32">
         <FeaturedResourceCard
           category="Blog"
           img={Brand}
@@ -69,7 +69,7 @@ const App = () => {
           src="#"
         />
       </div>
-      <div className="flex justify-between px-16 lg:px-32 gap-5 lg:gap-16">
+      <div className="flex flex-col lg:flex-row justify-between p-8 lg:px-32 gap-5 lg:gap-16">
         <ResourceCard
           category="Blog"
           img={SEO}
@@ -87,7 +87,7 @@ const App = () => {
           src="#"
         />
       </div>
-      <div className="flex justify-between px-16 lg:px-32 gap-5 lg:gap-16">
+      <div className="flex flex-col lg:flex-row justify-between p-8 lg:px-32 gap-5 lg:gap-16">
         <SolutionsCard
           type="black"
           title="Creative"
@@ -117,7 +117,7 @@ const App = () => {
           link="Chart a course"
         />
       </div>
-      <div className="flex flex-col justify-between px-16 lg:px-32 gap-5">
+      <div className="flex flex-col justify-between p-8 lg:px-32 gap-5">
         <ServiceCard
           type="gray"
           title="Branding"
@@ -135,7 +135,7 @@ const App = () => {
           link="Lorem ipsum case study"
         />
       </div>
-      <div className="flex justify-center px-16 py-20 lg:px-32">
+      <div className="flex justify-center p-8 py-20 lg:px-32">
         <BlogHero
           img={Brand}
           alt={"Human eye"}

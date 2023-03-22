@@ -15,14 +15,14 @@ export default function BlogHero({ img, alt, date, author, tags, title }) {
           </div>
         </div>
         <div className="lg:w-12/12 xl:w-full border border-light_gray ">
-          <div className="grid grid-cols-4 border-b border-light_gray">
-            <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-light_gray border-r border-light_gray ">
+          <div className="grid grid-cols-1 lg:grid-cols-4">
+            <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-light_gray border-r border-b border-light_gray ">
               {date}
             </p>
-            <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-light_gray border-r border-light_gray ">
+            <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-light_gray border-r border-b border-light_gray ">
               {author}
             </p>
-            <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-gold flex justify-start gap-5">
+            <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-gold flex border-b border-light_gray justify-start gap-5 lg:col-span-2">
               {tags.map((tag) => {
                 return <span>{tag}</span>;
               })}

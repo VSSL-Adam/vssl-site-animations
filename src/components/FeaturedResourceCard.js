@@ -19,14 +19,14 @@ export default function FeaturedResourceCard({
         </p>
         <img src={img} alt={alt} className="lg:w-3/12 max-w-full h-auto" />
         <div className="lg:w-9/12">
-          <div className="grid grid-cols-4 border-b border-light_gray group-hover:text-white group-hover:border-black">
-            <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-light_gray border-r border-light_gray group-hover:text-white group-hover:border-black">
+          <div className="grid grid-cols-1 lg:grid-cols-4 group-hover:text-white group-hover:border-black">
+            <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-light_gray border-r border-b border-light_gray group-hover:text-white group-hover:border-black">
               {date}
             </p>
-            <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-light_gray border-r border-light_gray group-hover:text-white group-hover:border-black">
+            <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-light_gray border-r border-b border-light_gray group-hover:text-white group-hover:border-black">
               {author}
             </p>
-            <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-gold flex justify-start gap-5 transition-all group-hover:text-white">
+            <p className="p-4 uppercase font-rift font-bold text-sm sm:text-lg text-gold flex justify-start gap-5 border-b border-light_gray transition-all group-hover:text-white lg:col-span-2">
               {tags.map((tag) => {
                 return <span>{tag}</span>;
               })}
