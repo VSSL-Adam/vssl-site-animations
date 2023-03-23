@@ -2,7 +2,7 @@
   grid-template-areas:
     "coin beach beach ."
     ". beach beach crew"
-    ". . . crew"
+    "salt . . crew"
     "ocean mates mates mates";
 }
 .coin {
@@ -15,13 +15,46 @@
 }
 .crew-members {
   grid-area: crew;
-  transform: translate(-75%, -5%);
+  transform: translate(-75%, -25%);
 }
 .mates {
   grid-area: mates;
-  transform: translate(0%, -45%);
+  transform: translate(0%, -40%);
 }
 .ocean {
   grid-area: ocean;
-  transform: translate(115%, -85%);
+  transform: translate(90%, 25%);
+}
+.salt {
+  grid-area: salt;
+  transform: translate(25%, 100%);
+}
+@media screen and (max-width: 640px) {
+  .beach {
+    transform: translate(-80%, 135%) scale(1.5);
+  }
+  .ocean {
+    transform: translate(10%, 5%);
+  }
+  .salt {
+    transform: translate(80%, 175%);
+  }
+}
+
+#cube {
+  // position: sticky;
+  // top: 50%;
+  width: 250px;
+  .cube-layer {
+    width: 400px;
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    // @media screen and (max-width: 640px) {
+    //   width: 300px;
+    // }
+  }
+}
+.hide-layer {
+  opacity: 0;
 }

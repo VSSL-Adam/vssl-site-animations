@@ -1,7 +1,7 @@
 import Logo from "../img/vssl-logo.svg";
 export default function HeaderNav() {
   return (
-    <header className="flex justify-between items-center">
+    <header className="flex justify-between items-center w-full z-50 fixed top-0">
       <img
         src={Logo}
         alt="VSSL Agency"

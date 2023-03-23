@@ -2,7 +2,6 @@ import Title from "./components/Title";
 import Button from "./components/Button";
 import NavLink from "./components/NavLink";
 import Salt from "./components/Salt";
-import HeaderNav from "./components/HeaderNav";
 import CaseStudyCard from "./components/CaseStudyCard";
 import ResourceCard from "./components/ResourceCard";
 import FeaturedResourceCard from "./components/FeaturedResourceCard";
@@ -11,6 +10,8 @@ import ServiceCard from "./components/ServiceCard";
 import BlogHero from "./components/BlogHero";
 import WorkCard from "./components/WorkCard";
 import FeaturedWorkCard from "./components/FeaturedWorkCard";
+import Crew from "./components/Crew";
+import Frame from "./components/Frame";
 
 // Images
 import SEO from "./img/components/seo.jpg";
@@ -22,14 +23,15 @@ import Asterra from "./img/components/asterra.jpg";
 const App = () => {
   return (
     <>
-      <HeaderNav />
+      <Frame />
+      <Crew />
       <div className="flex items-center justify-center p-12">
         <Title text="Work from the crew" />
       </div>
-      <div className="flex items-center justify-center p-12">
+      <div className="flex items-center justify-center p-12 relative z-40">
         <Salt title="Lock in the strategy and crack off" />
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center p-12 gap-5">
+      <div className="flex flex-col lg:flex-row items-center justify-center p-12 gap-5 relative z-40">
         <Button
           button_class="primary"
           title="Discovery More"
@@ -46,7 +48,7 @@ const App = () => {
         />
         <NavLink src="/" title="Subnav Link" />
       </div>
-      <div className="flex justify-center p-8 lg:px-32">
+      <div className="flex justify-center p-8 lg:px-32 relative z-40">
         <CaseStudyCard
           client="ASTERRA"
           title="A client's heroic idea and the brand we built to serve it"
@@ -59,7 +61,7 @@ const App = () => {
           ]}
         />
       </div>
-      <div className="flex justify-center p-8 lg:px-32">
+      <div className="flex justify-center p-8 lg:px-32 relative z-40">
         <FeaturedWorkCard
           img={MAPP}
           alt="MAPP Website redesign"
@@ -68,7 +70,7 @@ const App = () => {
           src="#"
         />
       </div>
-      <div className="flex flex-col lg:flex-row justify-between p-8 lg:px-32 gap-5 lg:gap-16">
+      <div className="flex flex-col lg:flex-row justify-between p-8 lg:px-32 gap-5 lg:gap-16 relative z-40">
         <WorkCard
           img={MAPP}
           alt="MAPP Website redesign"
@@ -84,7 +86,7 @@ const App = () => {
           src="#"
         />
       </div>
-      <div className="flex justify-center p-8 lg:px-32">
+      <div className="flex justify-center p-8 lg:px-32 relative z-40">
         <FeaturedResourceCard
           category="Blog"
           img={Brand}
@@ -96,7 +98,7 @@ const App = () => {
           src="#"
         />
       </div>
-      <div className="flex flex-col lg:flex-row justify-between p-8 lg:px-32 gap-5 lg:gap-16">
+      <div className="flex flex-col lg:flex-row justify-between p-8 lg:px-32 gap-5 lg:gap-16 relative z-40">
         <ResourceCard
           category="Blog"
           img={SEO}
@@ -114,7 +116,7 @@ const App = () => {
           src="#"
         />
       </div>
-      <div className="flex flex-col lg:flex-row justify-between p-8 lg:px-32 gap-5 lg:gap-16">
+      <div className="flex flex-col lg:flex-row justify-between p-8 lg:px-32 gap-5 lg:gap-16 relative z-40">
         <SolutionsCard
           type="black"
           title="Creative"
@@ -144,7 +146,7 @@ const App = () => {
           link="Chart a course"
         />
       </div>
-      <div className="flex flex-col justify-between p-8 lg:px-32 gap-5">
+      <div className="flex flex-col justify-between p-8 lg:px-32 gap-5 relative z-40">
         <ServiceCard
           type="gray"
           title="Branding"
@@ -162,7 +164,7 @@ const App = () => {
           link="Lorem ipsum case study"
         />
       </div>
-      <div className="flex justify-center p-8 py-20 lg:px-32">
+      <div className="flex justify-center p-8 py-20 lg:px-32 relative z-40">
         <BlogHero
           img={Brand}
           alt={"Human eye"}
