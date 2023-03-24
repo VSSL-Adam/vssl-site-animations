@@ -20,10 +20,6 @@ This was my initial thought on how to animate this similarly to the example on t
 
 These were tricky as I couldn't quite figure out the best way to handle the negative space around the text (when animating on hover any way I attempted to do it the animation would look wonky).
 
-## Crew Images
-
-I started an initial approach for the animating the image of me changing on scroll but didn't fully build it out. I've included the <span style="color:#9a784e;font-weight:bold">Crew.js</span> and <span style="color:#9a784e;font-weight:bold">crew.scss</span> files here though.
-
 # Additional Components
 
 For Tailwind practice I did some of the card components from the site mockup here. I added my own hover states for some of them as I didn't see any in regards to that in the site mockups; these are totally random and just my own initial explorations on Tailwind practices.
@@ -31,3 +27,7 @@ For Tailwind practice I did some of the card components from the site mockup her
 If you use any of the logic here make sure to include key props as needed (I left inline comments if an individual component needs them).
 
 I dropped in custom keyframes into the <span style="color:#9a784e;font-weight:bold">tailwind.config.js</span> file.
+
+## Crew Images
+
+See Crew.js and CrewPortrait.js for components needed for the Crew section. (Please note; I've used dummy hardcoded images here for demonstration; you'll want to remove that and use your own data.)
