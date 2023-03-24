@@ -1,59 +1,76 @@
-import Layer_1 from "../img/components/crew/crew-1.jpg";
-import Layer_2 from "../img/components/crew/crew-2.jpg";
-import Layer_3 from "../img/components/crew/crew-3.jpg";
-import Layer_4 from "../img/components/crew/crew-4.jpg";
-import Layer_5 from "../img/components/crew/crew-5.jpg";
-// import Layer_6 from "../img/components/crew/crew-6.jpg";
-// import Layer_7 from '../img/cube/layer-7.svg';
-// import Layer_8 from '../img/cube/layer-8.svg';
+import Default from "../img/components/crew/adam.jpg";
+import Yara from "../img/components/crew/yara.jpg";
+import Sparks from "../img/components/crew/sparks.jpg";
+import Tim from "../img/components/crew/tim.jpg";
+import Lindsey from "../img/components/crew/lindsey.jpg";
+import Dwayne from "../img/components/crew/dwayne.jpg";
+import Keri from "../img/components/crew/keri.jpg";
+import Deck from "../img/components/crew/deck.jpg";
+import Beach from "../img/components/crew/beach.jpg";
+import Coin from "../img/components/crew/coin.jpg";
+import Dock from "../img/components/crew/dock.jpg";
+import Phone from "../img/components/crew/phone.jpg";
+import Bre from "../img/components/crew/bre.jpg";
+import Lisa from "../img/components/crew/lisa.jpg";
+import Michael from "../img/components/crew/michael.jpg";
+import Dog from "../img/components/crew/dog.jpg";
 
 const CrewPortrait = () => {
-  const layers = [
-    { id: "layer-2", scrollLocation: 500, level: Layer_2 },
-    { id: "layer-3", scrollLocation: 1000, level: Layer_3 },
-    { id: "layer-4", scrollLocation: 1500, level: Layer_4 },
-    { id: "layer-5", scrollLocation: 2000, level: Layer_5 },
-    // { id: "layer-6", scrollLocation: 2500, level: Layer_6 },
-    // { id: "layer-7", scrollLocation: 3000, level: Layer_7 },
-    // { id: "layer-8", scrollLocation: 3500, level: Layer_8 },
+  // 🚨 Replace with your own data 🚨 // 
+  const imageArr = [
+    { id: "Yara Gosula",  src: Yara},
+    { id: "Sparks flying off metal",  src: Sparks },
+    { id: "Tim Peacock",  src: Tim },
+    { id: "Lindsey Sloan",  src: Lindsey },
+    { id: "Dwayne Jones",  src: Dwayne },
+    { id: "Keri Gerhear",  src: Keri },
+    { id: "Deck on water",  src: Deck },
+    { id: "Beach bonfire",  src: Beach },
+    { id: "VSSL Challenge Coins",  src: Coin },
+    { id: "Wooden dock",  src: Dock },
+    { id: "Woman holding smartphone",  src: Phone },
+    { id: "Bre Arnost",  src: Bre },
+    { id: "Lisa Sydes",  src: Lisa },
+    { id: "Michael Gauthier",  src: Michael },
+    { id: "Dog looking out of window",   src: Dog },
   ];
   window.addEventListener("scroll", () => {
     const scrollLocation = window.scrollY;
-    layers.forEach((layer, index) => {
-      const currentLayer = document.getElementById(layer.id);
-      const nextLayer =
-        index < layers.length
-          ? document.getElementById(layers[index].id)
+    let scrollValue = 250;
+    imageArr.forEach((image, index) => {
+      const currentImage = document.getElementById(image.id);    
+      image.scrollLocation = scrollValue+=50;
+      const nextImage =
+        index < imageArr.length
+          ? document.getElementById(imageArr[index].id)
           : null;
-
-      if (scrollLocation > layer.scrollLocation) {
-        currentLayer.classList.add("hide-layer");
-        if (nextLayer) {
-          nextLayer.classList.remove("hide-layer");
+      if (scrollLocation > image.scrollLocation) {
+        currentImage.classList.add("opacity-0");
+        if (nextImage) {
+          nextImage.classList.remove("opacity-0");
         }
       }
-      if (scrollLocation < layer.scrollLocation) {
-        nextLayer.classList.add("hide-layer");
+      if (scrollLocation < image.scrollLocation) {
+        nextImage.classList.add("opacity-0");
       }
     });
   });
 
   return (
-    <div id="cube">
+    <div>
       <img
-        src={Layer_1}
-        alt="Default cube"
-        className="cube-layer"
-        id="layer-1"
+        src={Default}
+        alt="VSSL t-shirt"
+        className="absolute top-1/2 right-auto bottom-auto left-1/2 -translate-x-1/2 -translate-y-1/2"
       />
-      {layers.map((layer, index) => {
+      {imageArr.map((image) => {
         return (
           <img
-            src={layer.level}
-            id={layer.id}
-            key={layer.id}
-            className="cube-layer hide-layer"
-            alt={`Layer ${index + 2} of cube`}
+            src={image.src}
+            id={image.id}
+            key={image.id}
+            className="absolute top-1/2 right-auto bottom-auto left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0"
+            alt={`${image.id}`}
           />
         );
       })}

@@ -3,12 +3,10 @@ import Button from "./Button";
 import CrewPortrait from "./CrewPortrait";
 
 import Beach from "../img/components/beach.jpg";
-import Adam from "../img/components/adam.jpg";
 import Coin from "../img/components/coin.jpg";
-import Mates from "../img/components/mates.jpg";
 import Ocean from "../img/components/ocean.jpg";
 
-const Crew = () => {
+export default function Crew() {
   return (
     <section className="flex flex-col items-center relative">
       <div className="p-10 lg:p-0 lg:w-2/6 flex items-center flex-col text-center mt-16">
@@ -29,38 +27,33 @@ const Crew = () => {
           target="_blank"
         />
       </div>
-      <div className="image-row grid">
+      <div className="grid grid-cols-4 bg-[url('../img/components/mates.jpg')] bg-cover bg-right-bottom ml-8 pt-4 md:ml-40 lg:ml-80 lg:my-20">
         <img
           src={Coin}
           alt="VSSL challenge coin"
-          className="max-w-full h-auto z-20"
+          className="-translate-y-2/4 -translate-x-1/3 z-10 md:-translate-x-2/4 md:-translate-y-20"
         />
+        <div className="col-span-3"></div>
         <img
           src={Beach}
           alt="Salty beach"
-          className="max-w-full h-auto beach z-10"
+          className="col-span-3 -translate-y-2/4 -translate-x-1/4 md:col-span-2 md:-translate-x-8"
         />
-        <div className="salt lg:w-7/12 z-30 lg:z-10">
-          <Salt title="The right crew can sink a fleet" />
-        </div>
-        <div className="crew-members z-10 sticky top-60">
-          {/* <img src={Adam} alt="Crew member" className="max-w-full h-auto" /> */}
-          <CrewPortrait />
-        </div>
-
-        <img
-          src={Mates}
-          alt="Illustration of crew members"
-          className="max-w-full h-auto mates"
-        />
+        <div></div>
         <img
           src={Ocean}
           alt="Sink or swim"
-          className="max-w-full h-auto ocean z-20"
+          className="col-span-2 pl-10 -translate-y-1/4 -translate-x-1/4 md:-translate-x-72 md:pl-32 lg:-translate-x-52"
         />
+        <div className="col-span-2 ml-8 -translate-y-full -translate-x-1/4 md:w-[200px] md:-translate-x-2/4 md:-translate-y-30 lg:-translate-y-24 lg:w-[350px] lg:h-96">
+          <div className="md:sticky md:top-2/4">
+            <CrewPortrait />
+          </div>
+        </div>
+      </div>
+      <div className="-translate-y-1/4 md:-translate-x-72 lg:-translate-x-[200%] lg:-translate-y-28">
+        <Salt title="The right crew can sink a fleet" />
       </div>
     </section>
   );
-};
-
-export default Crew;
+}
