@@ -12,6 +12,8 @@ import WorkCard from "./components/WorkCard";
 import FeaturedWorkCard from "./components/FeaturedWorkCard";
 import Crew from "./components/Crew";
 import Frame from "./components/Frame";
+import Banner from "./components/Banner";
+import VisionBanner from "./components/VisionBanner";
 
 // Images
 import SEO from "./img/components/seo.jpg";
@@ -19,6 +21,7 @@ import Wave from "./img/components/wave.jpg";
 import Brand from "./img/components/brand.png";
 import MAPP from "./img/components/mapp.jpg";
 import Asterra from "./img/components/asterra.jpg";
+import Captain from "./img/components/captain.jpg";
 
 const App = () => {
   return (
@@ -31,7 +34,7 @@ const App = () => {
       <div className="flex items-center justify-center p-12 relative z-40">
         <Salt title="Lock in the strategy and crack off" />
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center p-12 gap-5 relative z-40">
+      <div className="flex flex-col lg:flex-row items-center justify-center p-12 gap-20 relative z-40">
         <Button
           button_class="primary"
           title="Discovery More"
@@ -47,6 +50,12 @@ const App = () => {
           target="_blank"
         />
         <NavLink src="/" title="Subnav Link" />
+      </div>
+      <div className="flex items-center justify-center relative z-40">
+        <Banner
+          title="How well are we you steering your ship?"
+          description="We've created a marketing maturity model so you can plot the current location of your marketing, and set the course for future success."
+        />
       </div>
       <div className="flex justify-center p-8 lg:px-32 relative z-40">
         <CaseStudyCard
@@ -68,6 +77,26 @@ const App = () => {
           title="MAPP Cloud"
           description="The right way to upgrade a website"
           src="#"
+        />
+      </div>
+      <div className="flex items-center justify-center relative z-40">
+        <VisionBanner
+          img={Captain}
+          title="How we steer the ship"
+          vision={[
+            {
+              id: 1,
+              title: "Our Mission",
+              description:
+                "Our mission is to set the course for our clients, creating bold marketing experiences that propel brands to success.",
+            },
+            {
+              id: 2,
+              title: "Our Vision",
+              description:
+                "We leave the world better than we found it by connecting people: the crew, our clients, and their customers—because collaboration is where cool shit happens.",
+            },
+          ]}
         />
       </div>
       <div className="flex flex-col lg:flex-row justify-between p-8 lg:px-32 gap-5 lg:gap-16 relative z-40">

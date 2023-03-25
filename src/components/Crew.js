@@ -19,6 +19,7 @@ export default function Crew() {
           takes to propel your brand to success. Ready to meet the crew? Happy
           hour is at five.
         </p>
+        <div className="mt-8">
         <Button
           button_class="primary"
           title="Who is VSSL?"
@@ -26,6 +27,7 @@ export default function Crew() {
           src="#"
           target="_blank"
         />
+        </div>
       </div>
       <div className="grid grid-cols-4 bg-[url('../img/components/mates.jpg')] bg-cover bg-right-bottom ml-8 pt-4 md:ml-40 lg:ml-80 lg:my-20">
         <img
