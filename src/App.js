@@ -1,3 +1,4 @@
+// Components
 import Title from "./components/Title";
 import Button from "./components/Button";
 import NavLink from "./components/NavLink";
@@ -14,6 +15,7 @@ import Crew from "./components/Crew";
 import Frame from "./components/Frame";
 import Banner from "./components/Banner";
 import VisionBanner from "./components/VisionBanner";
+import Solutions from "./components/Solutions";
 
 // Images
 import SEO from "./img/components/seo.jpg";
@@ -27,6 +29,7 @@ const App = () => {
   return (
     <>
       <Frame />
+      <Solutions />
       <Crew />
       <div className="flex items-center justify-center p-12">
         <Title text="Work from the crew" />
